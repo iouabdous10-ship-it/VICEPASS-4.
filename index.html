@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101018"><title>VICEPASS — Identity Studio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="ambient"></div>
+<aside class="sidebar">
+  <a class="brand" href="#"><span class="brand-mark">V</span><span>VICE<span class="pink">PASS</span><small>IDENTITY STUDIO</small></span></a>
+  <div class="side-label">WORKSPACE</div>
+  <button class="nav active" data-page="studio"><span>▣</span> Carnet Studio <kbd>01</kbd></button>
+  <button class="nav" data-page="collection"><span>▤</span> Colección <kbd>02</kbd></button>
+  <button class="nav" data-page="news"><span>◉</span> Vice City News <kbd>03</kbd></button>
+  <button class="nav" data-page="toolbox"><span>⌘</span> Caja de herramientas <kbd>04</kbd></button>
+  <div class="side-bottom"><div class="online-dot"></div><div><b>VICEPASS LOCAL</b><small>Proyecto de roleplay · v2.0</small></div></div>
+</aside>
+<main class="main">
+<header class="topbar"><div><span class="eyebrow">VICE CITY / IDENTITY DEPARTMENT</span><h1 id="pageTitle">Carnet Studio <span class="live-pill">● LIVE EDITOR · V2.0</span></h1></div><div class="top-actions"><button class="btn ghost" id="resetBtn">↺ Reiniciar</button><button class="btn primary" id="downloadTop">↓ Exportar PNG</button></div></header>
+<section class="page active" id="studio">
+<div class="studio-grid">
+ <section class="panel editor">
+  <div class="panel-head"><div><span class="step">01 / CONFIGURACIÓN</span><h2>Diseña tu identidad</h2><p>Personaliza cada detalle de tu personaje.</p></div><span class="round-icon">✦</span></div>
+  <label class="field-label">TIPO DE CARNÉ</label>
+  <div class="type-grid" id="typeGrid">
+   <button class="type-option selected" data-type="lspd"><b>✦</b><span>Policía LSPD</span></button>
+   <button class="type-option" data-type="bcso"><b>★</b><span>Sheriff BCSO</span></button>
+   <button class="type-option" data-type="fbi"><b>⬡</b><span>FBI</span></button>
+   <button class="type-option" data-type="detective"><b>⌕</b><span>Detective</span></button>
+   <button class="type-option" data-type="traffic"><b>↗</b><span>Tráfico</span></button>
+   <button class="type-option" data-type="criminal"><b>◈</b><span>Criminal</span></button>
+   <button class="type-option" data-type="shoplifter"><b>▣</b><span>Ladrón tiendas</span></button>
+   <button class="type-option" data-type="robber"><b>◆</b><span>Atracador</span></button>
+   <button class="type-option" data-type="fugitive"><b>⚑</b><span>Fugitivo</span></button>
+   <button class="type-option" data-type="civilian"><b>◎</b><span>Civil</span></button>
+   <button class="type-option" data-type="medic"><b>✚</b><span>Médico</span></button>
+   <button class="type-option" data-type="mechanic"><b>⚙</b><span>Mecánico</span></button>
+   <button class="type-option" data-type="vip"><b>✧</b><span>VIP</span></button>
+  </div>
+  <div class="section-line"><span>02 / DATOS DEL PERSONAJE</span><i></i></div>
+  <div class="form-grid">
+   <label>Nombre completo<input id="name" value="Alex Morgan" maxlength="32"></label>
+   <label>Identificador / número<input id="number" value="VC-08421" maxlength="18"></label>
+   <label>Rango / categoría<select id="rank"></select></label>
+   <label>Departamento<input id="department" value="LOS SANTOS POLICE"></label>
+   <label>Fecha de emisión<input id="issued" type="date"></label>
+   <label>Fecha de caducidad<input id="expiry" type="date"></label>
+   <label class="wide">Notas / descripción<input id="notes" value="DIVISIÓN DE PATRULLA" maxlength="48"></label>
+  </div>
+  <div class="section-line"><span>03 / FOTOGRAFÍA</span><i></i></div>
+  <div class="photo-row"><div class="photo-mini" id="photoMini">👤</div><div class="photo-info"><b>Foto del personaje</b><small>Sube una imagen JPG, PNG o WEBP.</small><label class="upload-btn" for="photo">＋ Subir fotografía</label><input id="photo" type="file" accept="image/*" hidden></div><button class="btn tiny ghost" id="removePhoto">Quitar</button></div>
+  <div class="section-line"><span>04 / APARIENCIA</span><i></i></div>
+  <div class="form-grid">
+   <label>Color principal<input id="accent" type="color" value="#d84b91"></label>
+   <label>Estilo<select id="style"><option value="classic">Clásico</option><option value="neon">Neon Vice</option><option value="tactical">Táctico</option><option value="sunset">Sunset</option></select></label>
+   <label class="wide">Fondo<input id="background" type="range" min="1" max="27" value="5"></label>
+  </div>
+  <div class="editor-actions"><button class="btn ghost" id="randomBtn">✦ Aleatorio</button><button class="btn ghost" id="saveBtn">▤ Guardar diseño</button><button class="btn primary" id="generateBtn">Actualizar carné ↗</button></div>
+ </section>
+ <section class="preview-column">
+  <div class="preview-head"><div><span class="step">VISTA PREVIA / 01</span><h2>Tu identificación</h2></div><span class="preview-status"><i></i> EN DIRECTO</span></div>
+  <div class="card-stage"><canvas id="cardCanvas" width="1100" height="700" aria-label="Vista previa del carné ficticio"></canvas><div class="stage-caption">PREVISUALIZACIÓN · FORMATO HORIZONTAL</div></div>
+  <div class="export-panel"><div><b>Listo para exportar</b><small>PNG · Alta resolución · 1100 × 700 px</small></div><button class="btn primary" id="downloadBtn">↓ Descargar PNG</button></div>
+  <div class="notice"><span>ⓘ</span><p><b>Prop de roleplay.</b> Todos los carnés llevan la marca visible “FICTIONAL ROLEPLAY · NOT AN OFFICIAL ID”. No son documentos oficiales ni sirven para identificarse en la vida real.</p></div>
+ </section>
+</div>
+</section>
+<section class="page" id="collection"><div class="page-intro"><span class="step">ARCHIVO PERSONAL</span><h2>Tu colección</h2><p>Guarda los diseños que crees en este navegador.</p></div><div class="collection-actions"><button class="btn primary" id="newCard">＋ Crear nuevo carné</button><button class="btn ghost" id="clearCollection">Vaciar colección</button></div><div id="savedGrid" class="saved-grid"></div></section>
+<section class="page" id="news"><div class="page-intro"><span class="step">VICE CITY / BULLETIN</span><h2>Vice City News</h2><p>Panel de novedades del proyecto y notas de actualización.</p></div><div class="news-grid">
+ <article class="news-card hero-news"><img src="assets/backgrounds/vice-city-01.webp"><div><span class="tag">PROYECTO</span><h3>VICEPASS Identity Studio ya está aquí</h3><p>Un espacio para crear identificaciones ficticias para historias, servidores y partidas de roleplay.</p><small>16 NOV 2026 · EQUIPO VICEPASS</small></div></article>
+ <article class="news-card"><span class="news-icon">✦</span><span class="tag">NUEVO</span><h3>13 estilos de personaje</h3><p>Policía, sheriff, investigación, servicios médicos, civiles, mecánicos y perfiles criminales ficticios.</p><small>ACTUALIZACIÓN 1.0</small></article>
+ <article class="news-card"><span class="news-icon">▧</span><span class="tag">CREATIVIDAD</span><h3>Exportación en PNG</h3><p>Descarga tus diseños en alta resolución para utilizarlos como props visuales en tu roleplay.</p><small>ACTUALIZACIÓN 1.0</small></article>
+ <article class="news-card"><span class="news-icon">◈</span><span class="tag">RECURSOS</span><h3>Vice City visual pack</h3><p>Fondos y referencias visuales incluidos desde tu caja de herramientas original.</p><small>RECURSOS LOCALES</small></article>
+ </div><p class="footnote">Esta sección contiene noticias del proyecto VICEPASS, no un feed de noticias oficiales de Rockstar Games.</p></section>
+<section class="page" id="toolbox"><div class="page-intro"><span class="step">CREATIVE TOOLS</span><h2>Caja de herramientas</h2><p>Recursos incluidos en tu ZIP original y utilidades para tus diseños.</p></div><div class="tools-grid">
+ <article class="tool-card"><span class="tool-icon">▧</span><h3>Galería de fondos</h3><p>Fondos Vice City incluidos en assets/backgrounds.</p><a href="assets/backgrounds/vice-city-01.webp" target="_blank">Abrir primer fondo ↗</a></article>
+ <article class="tool-card"><span class="tool-icon">◉</span><h3>Galería de personajes</h3><p>Referencias visuales del pack de capturas que has proporcionado.</p><a href="assets/user-gallery/character-01.webp" target="_blank">Abrir galería ↗</a></article>
+ <article class="tool-card"><span class="tool-icon">✦</span><h3>Generador aleatorio</h3><p>Genera una identidad ficticia con nombre, número y rango al azar.</p><button class="text-btn" id="toolRandom">Generar personaje ↗</button></article>
+ <article class="tool-card"><span class="tool-icon">⇩</span><h3>Exportar diseño</h3><p>Guarda el diseño actual como imagen PNG de alta resolución.</p><button class="text-btn" id="toolDownload">Descargar carné ↗</button></article>
+ <article class="tool-card"><span class="tool-icon">▤</span><h3>Guardar en colección</h3><p>Conserva una copia local de los datos de tu diseño.</p><button class="text-btn" id="toolSave">Guardar diseño ↗</button></article>
+ <article class="tool-card"><span class="tool-icon">⌘</span><h3>Atajos</h3><p><b>Ctrl + S</b> guarda · <b>Ctrl + E</b> exporta · <b>R</b> aleatorio (fuera de campos).</p></article>
+ </div><div class="resource-strip"><h3>Contenido original incluido</h3><p>Se han incorporado las capturas de tu carpeta “caja de herramientas”, 27 fondos de Vice City y 77 imágenes de personajes en formato WebP optimizado.</p></div></section>
+<footer>VICEPASS © 2026 <span>FAN-MADE ROLEPLAY CREATOR · NOT AFFILIATED WITH ROCKSTAR GAMES</span></footer>
+</main>
+<script src="script.js"></script>
+</body></html>
