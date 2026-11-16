@@ -1,1 +1,3 @@
-Los iconos principales de interfaz están integrados como símbolos vectoriales y CSS en index.html y style.css. Esta carpeta queda preparada para iconos SVG/PNG adicionales.\n
+# Vice City News
+
+Esta carpeta queda reservada para futuras publicaciones y notas del proyecto VICEPASS. La sección News incluida en `index.html` contiene novedades del propio proyecto, no noticias oficiales de Rockstar Games.
