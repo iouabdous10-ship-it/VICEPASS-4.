@@ -1,0 +1,15 @@
+{
+  "id": "fbi",
+  "label": "FEDERAL BUREAU",
+  "department": "VICE CITY FIELD OFFICE",
+  "color": "#5b9bd5",
+  "symbol": "⬡",
+  "ranks": [
+    "Agente en prácticas",
+    "Agente especial",
+    "Agente senior",
+    "Supervisor",
+    "Director adjunto"
+  ],
+  "notice": "FICTIONAL ROLEPLAY — NOT AN OFFICIAL ID"
+}

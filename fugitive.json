@@ -1,0 +1,13 @@
+{
+  "id": "fugitive",
+  "label": "ALERTA DE FICCIÓN",
+  "department": "VICE CITY ROLEPLAY",
+  "color": "#e26b57",
+  "symbol": "⚑",
+  "ranks": [
+    "En búsqueda",
+    "Alerta local",
+    "Caso prioritario"
+  ],
+  "notice": "FICTIONAL ROLEPLAY — NOT AN OFFICIAL ID"
+}

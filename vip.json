@@ -1,0 +1,15 @@
+{
+  "id": "vip",
+  "label": "PASE ESPECIAL",
+  "department": "VICE CITY CLUB",
+  "color": "#d8b75f",
+  "symbol": "✧",
+  "ranks": [
+    "Silver",
+    "Gold",
+    "Platinum",
+    "Diamond",
+    "Founder"
+  ],
+  "notice": "FICTIONAL ROLEPLAY — NOT AN OFFICIAL ID"
+}

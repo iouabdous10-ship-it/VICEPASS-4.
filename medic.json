@@ -1,0 +1,15 @@
+{
+  "id": "medic",
+  "label": "SERVICIOS MÉDICOS",
+  "department": "VICE CITY EMS",
+  "color": "#5bc8a2",
+  "symbol": "✚",
+  "ranks": [
+    "Paramédico",
+    "Técnico EMT",
+    "Enfermero/a",
+    "Médico",
+    "Jefe médico"
+  ],
+  "notice": "FICTIONAL ROLEPLAY — NOT AN OFFICIAL ID"
+}

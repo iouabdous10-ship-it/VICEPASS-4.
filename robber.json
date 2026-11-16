@@ -1,0 +1,13 @@
+{
+  "id": "robber",
+  "label": "EXPEDIENTE DE ATRACO",
+  "department": "CRIMINAL ROLEPLAY FILE",
+  "color": "#d65c5c",
+  "symbol": "◆",
+  "ranks": [
+    "Implicado",
+    "Sospechoso principal",
+    "Buscado en la historia"
+  ],
+  "notice": "FICTIONAL ROLEPLAY — NOT AN OFFICIAL ID"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "mechanic",
+  "label": "SERVICIO MECÁNICO",
+  "department": "VICE CITY CUSTOMS",
+  "color": "#d49c55",
+  "symbol": "⚙",
+  "ranks": [
+    "Aprendiz",
+    "Mecánico",
+    "Especialista",
+    "Jefe de taller"
+  ],
+  "notice": "FICTIONAL ROLEPLAY — NOT AN OFFICIAL ID"
+}

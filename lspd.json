@@ -1,0 +1,17 @@
+{
+  "id": "lspd",
+  "label": "POLICÍA LSPD",
+  "department": "LOS SANTOS POLICE",
+  "color": "#d84b91",
+  "symbol": "✦",
+  "ranks": [
+    "Cadete",
+    "Oficial I",
+    "Oficial II",
+    "Sargento",
+    "Teniente",
+    "Capitán",
+    "Jefe de policía"
+  ],
+  "notice": "FICTIONAL ROLEPLAY — NOT AN OFFICIAL ID"
+}

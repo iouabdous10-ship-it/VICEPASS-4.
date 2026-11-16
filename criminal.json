@@ -1,0 +1,15 @@
+{
+  "id": "criminal",
+  "label": "ARCHIVO CRIMINAL",
+  "department": "VICE CITY ROLEPLAY",
+  "color": "#c45c65",
+  "symbol": "◈",
+  "ranks": [
+    "Sospechoso",
+    "Asociado",
+    "Miembro",
+    "Veterano",
+    "Líder"
+  ],
+  "notice": "FICTIONAL ROLEPLAY — NOT AN OFFICIAL ID"
+}

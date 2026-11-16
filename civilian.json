@@ -1,0 +1,14 @@
+{
+  "id": "civilian",
+  "label": "IDENTIDAD CIVIL",
+  "department": "VICE CITY RESIDENT",
+  "color": "#66b7b4",
+  "symbol": "◎",
+  "ranks": [
+    "Residente",
+    "Visitante",
+    "Propietario",
+    "Profesional"
+  ],
+  "notice": "FICTIONAL ROLEPLAY — NOT AN OFFICIAL ID"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "bcso",
+  "label": "SHERIFF BCSO",
+  "department": "BLAINE COUNTY SHERIFF",
+  "color": "#c69b55",
+  "symbol": "★",
+  "ranks": [
+    "Deputy Trainee",
+    "Deputy",
+    "Senior Deputy",
+    "Sergeant",
+    "Lieutenant",
+    "Sheriff"
+  ],
+  "notice": "FICTIONAL ROLEPLAY — NOT AN OFFICIAL ID"
+}

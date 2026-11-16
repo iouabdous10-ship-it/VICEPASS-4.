@@ -1,0 +1,13 @@
+{
+  "id": "shoplifter",
+  "label": "INCIDENTE / COMERCIO",
+  "department": "RETAIL INCIDENT FILE",
+  "color": "#cf865a",
+  "symbol": "▣",
+  "ranks": [
+    "Sospechoso",
+    "Reincidente",
+    "Bajo investigación"
+  ],
+  "notice": "FICTIONAL ROLEPLAY — NOT AN OFFICIAL ID"
+}

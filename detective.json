@@ -1,0 +1,15 @@
+{
+  "id": "detective",
+  "label": "INVESTIGACIONES",
+  "department": "MAJOR CRIME DIVISION",
+  "color": "#b9a4d8",
+  "symbol": "⌕",
+  "ranks": [
+    "Detective I",
+    "Detective II",
+    "Detective senior",
+    "Inspector",
+    "Jefe de unidad"
+  ],
+  "notice": "FICTIONAL ROLEPLAY — NOT AN OFFICIAL ID"
+}

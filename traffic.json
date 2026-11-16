@@ -1,0 +1,14 @@
+{
+  "id": "traffic",
+  "label": "POLICÍA DE TRÁFICO",
+  "department": "HIGHWAY PATROL",
+  "color": "#e2b84d",
+  "symbol": "↗",
+  "ranks": [
+    "Agente vial",
+    "Oficial de tráfico",
+    "Supervisor vial",
+    "Jefe de patrulla"
+  ],
+  "notice": "FICTIONAL ROLEPLAY — NOT AN OFFICIAL ID"
+}
